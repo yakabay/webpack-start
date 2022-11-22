@@ -1,1 +1,1 @@
-console.log("Start!!!");
+(()=>{"use strict";console.log("Start!!!")})();

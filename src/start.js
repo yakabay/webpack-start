@@ -1,1 +1,4 @@
-console.log("Start!!!")
+import { logText } from "./functions"
+import "./style.css"
+
+logText("Start!!!")
