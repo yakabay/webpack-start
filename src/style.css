@@ -4,3 +4,14 @@
     font-family: "Arial";
     color: #1b5b4c;
 }
+
+.button-start {
+    display: block;
+    margin: 0 auto;
+    border-radius: 0;
+    border: none;
+    padding: 10px 20px;
+    background-color: #17b897;
+    color: white;
+    font-size: 18px;
+}
