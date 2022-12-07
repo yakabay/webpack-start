@@ -5,8 +5,8 @@ const ReactButton = () => {
         console.log("click React button!")
     }
 
-    return <button onClick={handleButtonClick}>
-        Hello from React!
+    return <button style={{ marginTop: 30 }} className="button-start" onClick={handleButtonClick}>
+        React Button
     </button>
 }
 

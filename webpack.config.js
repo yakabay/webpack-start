@@ -9,8 +9,11 @@ module.exports = {
         filename: "index.js"
     },
     module: {
-        rules: [{ test: /\.css$/, use: ["style-loader", "css-loader"] }]
+        rules: [
+            { test: /\.css$/, use: ["style-loader", "css-loader"] },
+            { test: /\.js$/, use: "babel-loader"}
+        ]
     },
-    mode: "production",
+    mode: "development",
     devtool: "source-map"
 }

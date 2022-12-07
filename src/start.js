@@ -1,5 +1,5 @@
 import React from "react"
-import ReactDom from "react-dom"
+import { createRoot } from "react-dom/client"
 import "./style.css"
 import ReactButton from "./app/react/reactButton";
 import { logText } from "./app/utils/functions";
@@ -10,8 +10,9 @@ const App = () => {
     </div>
 }
 
-const reactRoot = document.getElementById("react_root")
-ReactDom.render(<App/>, reactRoot);
+const reactContainer = document.getElementById("react_container")
+const root = createRoot(reactContainer);
+root.render(<App/>);
 
 
 logText("Start!!")
