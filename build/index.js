@@ -8149,26 +8149,38 @@ var ReactButton = function ReactButton() {
       marginTop: 30
     },
     className: "button-start",
-    onClick: handleButtonClick
+    onClick: handleButtonClick,
+    "data-locatorjs-id": "/Users/yakabay/IdeaProjects/webpack-start/src/app/react/reactButton.js::0"
   }, "React Button");
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ReactButton);
-
-/***/ }),
-
-/***/ "./src/app/utils/functions.js":
-/*!************************************!*\
-  !*** ./src/app/utils/functions.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "logText": () => (/* binding */ logText)
-/* harmony export */ });
-var logText = function logText(text) {
-  console.log(text);
-};
+(() => {
+  if (typeof window !== "undefined") {
+    window.__LOCATOR_DATA__ = window.__LOCATOR_DATA__ || {};
+    window.__LOCATOR_DATA__["/Users/yakabay/IdeaProjects/webpack-start/src/app/react/reactButton.js"] = {
+      "filePath": "/src/app/react/reactButton.js",
+      "projectPath": "/Users/yakabay/IdeaProjects/webpack-start",
+      "expressions": [{
+        "name": "button",
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 11,
+            "index": 154
+          },
+          "end": {
+            "line": 10,
+            "column": 13,
+            "index": 276
+          }
+        },
+        "wrappingComponentId": null
+      }],
+      "styledDefinitions": [],
+      "components": []
+    };
+  }
+})();
 
 /***/ }),
 
@@ -8655,24 +8667,79 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
 /* harmony import */ var _app_react_reactButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/react/reactButton */ "./src/app/react/reactButton.js");
-/* harmony import */ var _app_utils_functions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app/utils/functions */ "./src/app/utils/functions.js");
-
 
 
 
 
 var App = function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_app_react_reactButton__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    "data-locatorjs-id": "/Users/yakabay/IdeaProjects/webpack-start/src/start.js::0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_app_react_reactButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    "data-locatorjs-id": "/Users/yakabay/IdeaProjects/webpack-start/src/start.js::1"
+  }));
 };
 var reactContainer = document.getElementById("react_container");
 var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(reactContainer);
-root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(App, null));
-(0,_app_utils_functions__WEBPACK_IMPORTED_MODULE_4__.logText)("Start!!");
-var startButton = document.getElementById("button-start");
-var handeButtonClick = function handeButtonClick() {
-  (0,_app_utils_functions__WEBPACK_IMPORTED_MODULE_4__.logText)(a);
-};
-startButton.addEventListener("click", handeButtonClick);
+root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(App, {
+  "data-locatorjs-id": "/Users/yakabay/IdeaProjects/webpack-start/src/start.js::2"
+}));
+(() => {
+  if (typeof window !== "undefined") {
+    window.__LOCATOR_DATA__ = window.__LOCATOR_DATA__ || {};
+    window.__LOCATOR_DATA__["/Users/yakabay/IdeaProjects/webpack-start/src/start.js"] = {
+      "filePath": "/src/start.js",
+      "projectPath": "/Users/yakabay/IdeaProjects/webpack-start",
+      "expressions": [{
+        "name": "div",
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 11,
+            "index": 176
+          },
+          "end": {
+            "line": 9,
+            "column": 10,
+            "index": 215
+          }
+        },
+        "wrappingComponentId": null
+      }, {
+        "name": "ReactButton",
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 8,
+            "index": 190
+          },
+          "end": {
+            "line": 8,
+            "column": 22,
+            "index": 204
+          }
+        },
+        "wrappingComponentId": null
+      }, {
+        "name": "App",
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 12,
+            "index": 338
+          },
+          "end": {
+            "line": 14,
+            "column": 18,
+            "index": 344
+          }
+        },
+        "wrappingComponentId": null
+      }],
+      "styledDefinitions": [],
+      "components": []
+    };
+  }
+})();
 })();
 
 /******/ })()
